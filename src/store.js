@@ -1,11 +1,11 @@
 import { createStore } from 'redux';
+import rootReducer from './reducers';
 
-const initialState = {
-  
-};
+const initialState = {};
 
 export default initialState => (
   createStore(
-    initialState
+    initialState,
+    rootReducer
   )
 );

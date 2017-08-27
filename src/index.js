@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import { configureStore } from './store';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
+import HomePage from './containers/homePage';
 
 const store = configureStore();
 
@@ -11,7 +13,7 @@ ReactDOM.render(
     <BrowserRouter>
       <div>
         <Switch>
-          <Route path="" component={} />
+          <Route path="/" component={HomePage} />
         </Switch>
       </div>
     </BrowserRouter>
